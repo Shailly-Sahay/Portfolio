@@ -1,0 +1,137 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tagAnimation {
+  0% {
+    left: -70%;
+  }
+
+  100% {
+    left: 1000%;
+  }
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+// Animation for bg image - 1
+@keyframes pan-image {
+  // View 1
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+
+  20% {
+    background-position: 30% 35%;
+    background-size: 200%;
+  }
+
+  // View 2
+  20.001% {
+    background-position: 30% 85%;
+    background-size: 500%;
+  }
+
+  40% {
+    background-position: 49% 81%;
+    background-size: 500%;
+  }
+
+  // View 3
+  40.001% {
+    background-position: 80% 42%;
+    background-size: 300%;
+  }
+
+  60% {
+    background-position: 84% 33%;
+    background-size: 300%;
+  }
+
+  // View 4
+  60.001% {
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
+
+  80% {
+    background-position: 15% 4%;
+    background-size: 300%;
+  }
+
+  // View 5
+  80.001% {
+    background-position: 80% 10%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+}
+
+// Animation for bg image - 2
+@keyframes pan-image2 {
+  // View 1
+  0% {
+    background-position: 0% 0%;
+    background-size: 200%;
+  }
+
+  100% {
+    background-position: 10% 10%;
+    background-size: 200%;
+  }
+}

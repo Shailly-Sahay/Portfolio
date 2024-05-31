@@ -1,0 +1,72 @@
+// ********************
+// Colors
+// ********************
+// 1. Website colors
+$color-primary: #6919ff;
+$color-accent: #da77f2;
+
+$color-card-screen-forkify: pink;
+// Project color
+
+// $vars: (
+//   projectcolor: green,
+// );
+
+// 2. Shades and tints
+$primary-light-1: #8747ff;
+$accent-light-2: #e5a3e1;
+
+$primary-dark-1: #5414cc;
+$primary-dark-2: #3f0f99;
+
+// 3. BW
+$color-white: #fff;
+$color-black: #000;
+$color-card-content: rgb(23, 23, 23);
+
+// 3. Gradients
+$color-gradient-1: linear-gradient(to right bottom, $color-primary, #9775fa);
+
+// 5. Text color
+$color-grey-light-1: #f9f5f3; // Light background
+$color-grey-light-2: #f2efee; // Light lines
+$color-grey-light-3: #96a1c0; // Light text
+
+$color-grey-dark-1: #615551; // Normal text
+$color-grey-dark-2: #918581; // Lighter text
+
+// ********************
+// SPACING SYSTEM
+// ********************
+
+// 1. Padding and margin system
+$space-xxs: 0.2em;
+$space-xs: 0.4em;
+$space-s: 0.8em;
+$space-md: 1.2em;
+$space-l: 1.6em;
+$space-xl: 2em;
+$space-xxl: 2.4em;
+
+// 2. Margin
+$space-m-xxs: 2rem;
+$space-m-xs: 4rem;
+$space-m-s: 6rem;
+$space-m-m: 8rem;
+$space-m-l: 10rem;
+
+$grid-gutter-gap-h: 3rem;
+
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+
+// Containers width
+$width-40: 40%;
+$width-50: 50%;
+$width-60: 60%;
+$width-70: 70%;
+
+// Skills-height
+$skills-heading: 250vh;

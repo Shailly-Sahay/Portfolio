@@ -1,0 +1,229 @@
+@keyframes tagAnimation {
+  0% {
+    left: -70%;
+  }
+
+  100% {
+    left: 1000%;
+  }
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+// Animation for bg image - 1
+@keyframes pan-image {
+  // View 1
+  0% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+
+  20% {
+    background-position: 30% 35%;
+    background-size: 200%;
+  }
+
+  // View 2
+  20.001% {
+    background-position: 30% 85%;
+    background-size: 500%;
+  }
+
+  40% {
+    background-position: 49% 81%;
+    background-size: 500%;
+  }
+
+  // View 3
+  40.001% {
+    background-position: 80% 42%;
+    background-size: 300%;
+  }
+
+  60% {
+    background-position: 84% 33%;
+    background-size: 300%;
+  }
+
+  // View 4
+  60.001% {
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
+
+  80% {
+    background-position: 15% 4%;
+    background-size: 300%;
+  }
+
+  // View 5
+  80.001% {
+    background-position: 80% 10%;
+    background-size: 300%;
+  }
+
+  100% {
+    background-position: 36% 42%;
+    background-size: 200%;
+  }
+}
+
+// Animation for bg image - 2
+@keyframes pan-image2 {
+  // View 1
+  0% {
+    background-position: 0% 0%;
+    background-size: 200%;
+  }
+
+  100% {
+    background-position: 10% 10%;
+    background-size: 200%;
+  }
+}
+
+// @keyframes astroMovRotate {
+//   0% {
+//     rotate: 0deg;
+//   }
+
+//   100% {
+//     rotate: 10deg;
+//   }
+// }
+
+@keyframes astroMov {
+  0% {
+    transform: translate(-50%, 0%);
+    rotate: 0deg;
+  }
+
+  10% {
+    transform: translate(-40%, 10%);
+    rotate: 120deg;
+  }
+
+  20% {
+    transform: translate(-20%, -20%);
+    rotate: 200deg;
+  }
+
+  30% {
+    transform: translate(10%, 10%);
+    rotate: 280deg;
+  }
+
+  40% {
+    transform: translate(20%, 20%);
+    rotate: 360deg;
+  }
+
+  50% {
+    transform: translate(40%, 30%);
+    rotate: 300deg;
+  }
+
+  60% {
+    transform: translate(50%, 20%);
+    rotate: 200deg;
+  }
+
+  70% {
+    transform: translate(30%, 10%);
+    rotate: 100deg;
+  }
+
+  80% {
+    transform: translate(10%, -20%);
+    rotate: 200deg;
+  }
+
+  90% {
+    transform: translate(-20%, -10%);
+    rotate: 120deg;
+  }
+
+  100% {
+    transform: translate(-50%, 0%);
+    rotate: 0deg;
+  }
+}
+
+@keyframes spaceshipMov {
+  0% {
+    transform: translate(0%, 0%);
+    rotate: 0deg;
+  }
+
+  10% {
+    transform: translate(-10%, 10%);
+    rotate: 120deg;
+  }
+
+  20% {
+    transform: translate(-20%, -20%);
+    rotate: 360deg;
+  }
+
+  30% {
+    transform: translate(10%, 10%);
+    rotate: 200deg;
+  }
+
+  40% {
+    transform: translate(20%, 20%);
+    rotate: 100deg;
+  }
+
+  50% {
+    transform: translate(50%, 30%);
+    rotate: 0deg;
+  }
+
+  60% {
+    transform: translate(50%, 20%);
+    rotate: 150deg;
+  }
+
+  70% {
+    transform: translate(30%, 10%);
+    rotate: 70deg;
+  }
+
+  80% {
+    transform: translate(10%, -20%);
+    rotate: 200deg;
+  }
+
+  90% {
+    transform: translate(-20%, -10%);
+    rotate: 300deg;
+  }
+
+  100% {
+    transform: translate(-50%, 0%);
+    rotate: 360deg;
+  }
+}
+
+@keyframes asteroidMov {
+  0% {
+    transform: translate(-60%, -60%);
+  }
+
+  5% {
+    transform: translate(60%, 60%);
+  }
+
+  100% {
+    transform: translate(70%, 70%);
+  }
+}

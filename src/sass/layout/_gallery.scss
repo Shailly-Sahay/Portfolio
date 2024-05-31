@@ -1,0 +1,43 @@
+.gallery {
+  margin-bottom: $space-m-l;
+  &__wrapper {
+    &-heading {
+      text-align: center;
+    }
+
+    &-content {
+      position: relative;
+      height: 80vh;
+      width: 100vw;
+
+      overflow: hidden;
+    }
+
+    &-track {
+      display: flex;
+      gap: 3vmin;
+      position: absolute;
+      transform: translate(0, -50%);
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+    }
+  }
+
+  &__image {
+    width: 28vmin;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100%) brightness(80%);
+    transition: all 0.3s ease-in;
+    &:hover {
+      scale: 1.03;
+      filter: grayscale(100%) brightness(80%) blur(2px);
+    }
+  }
+}
+
+.lazy-img {
+  filter: blur(20px);
+}

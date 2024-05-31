@@ -1,0 +1,29 @@
+// .blob {
+//   background-color: pink;
+//   height: 100%;
+//   aspect-ratio: 1/1;
+//   position: absolute;
+
+//   @include absoluteCenter;
+//   border-radius: 50%;
+
+//   background: linear-gradient(to right, aquamarine, mediumpurple);
+
+//   //   animation: rotate 20s infinite;
+// }
+
+// .blur {
+//   height: 100%;
+//   aspect-ratio: 1/1;
+//   position: absolute;
+//   z-index: 2;
+//   backdrop-filter: blur(200px);
+
+//   @include absoluteCenter;
+// }
+
+// .mouse-wrapper {
+//   position: relative;
+//   height: 20%;
+//   aspect-ratio: 1;
+// }

@@ -1,0 +1,21 @@
+// @import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/_base.scss";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animation";
+// @import 'components';
+// @import "layout"
+@import "layout/header-and-about";
+@import "layout/gallery";
+@import "layout/projectPage";
+@import "layout/source-code";
+@import "layout/form";
+@import "layout/footer";
+
+@import "components/btn";
+@import "components/tag";
+@import "components/card";
+@import "components/card2";

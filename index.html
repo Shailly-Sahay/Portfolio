@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="src/sass/main.scss" />
+  <script type="module" src="src/js/controller.js"></script>
+  <script src="https://kit.fontawesome.com/fc8764b932.js" crossorigin="anonymous"></script>
+  <script await type="module" src="node_modules/matrix-effect/scripts/matrix.js"></script>
+  <title>SHAILLY SAHAY | Web developer</title>
+</head>
+
+<body>
+
+  <div class="bg-block">
+    <!-- PNG BLOCK -->
+    <div class="bg-block__imgbox bg-block__imgbox-2"></div>
+    <div class="bg-block__imgbox bg-block__imgbox-1"></div>
+    <div class="bg-block__imgbox bg-block__imgbox-3"></div>
+
+  </div>
+  <!-- Section Hero -->
+  <section class="hero-section" id="section-1">
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="link nav__link" href="#gallery">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#about">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link" href="#code">The code</a>
+          </li>
+        </ul>
+
+        <div class="nav__logo"><a href=""><i class="fa-solid fa-gamepad logo" style="color: #ffffff;"></i></a>
+
+        </div>
+
+        <div class="nav__item">
+          <a class="btn__round btn__simple btn" href="#form">Hit me
+            up!</a>
+        </div>
+      </nav>
+
+    </header>
+    <div class="hero">
+
+      <div class="hero__mask">
+        <div class="hero__wrapper">
+
+          <div class="hero__heading">
+            <h1 class="heading-primary "><span class="heading-primary__span1">
+                Hey! I am glad to </span><br> <span class="heading-primary__span2">have you here</span>
+            </h1>
+          </div>
+          <div class="hero__btnbox">
+            <div class="btn__specialWrapper">
+              <a class=" btn btn__white btn__square btn__scale" href="#gallery">Dig into my universe</a>
+              <a class="btn btn__square btn__simple btn__scale" href="#about">About me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main class="mainWebsite-Page">
+
+    <!-- Section about -->
+    <section class="section-about" id="about">
+
+      <div class="section-about__contentbox">
+        <div class="section-about__contentbox--imgbox  ">
+          <img src="src/img/ME.jpg" alt="">
+        </div>
+        <div class="section-about__contentbox--infobox">
+          <div class="info-wrapper">
+            <div class="tag">
+
+              <div class="tag__wrapper tag__wrapper1">
+                <span class="tag__content">About</span>
+              </div>
+            </div>
+
+            <p class="section-about__contentbox--info">
+              Hi there! I'm <span>Shailly Sahay</span>, your friendly
+              <span>front-end web developer</span>
+              from Patna, Bihar. I have done my bachelors in Physics from St. Xavier's College in Mumbai. I love making
+              <span> websites look great
+                and work well.</span> Let's create something amazing together!
+            </p>
+            <div class="section-about__contentbox--skills" id="cards">
+              <!-- <span>
+                <div class="tag">
+                  <div class="tag__wrapper">
+                    <span class="tag__content">About</span>
+                  </div>
+                </div>
+              </span> -->
+
+            </div>
+
+            <!-- <aside class="section-about__btnbox">
+              <a href="#" class="btn btn__round btn__simple">Let's see my work!</a>
+            </aside> -->
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Section Gallery -->
+    <section class="gallery" id="gallery">
+      <div class="section">
+        <div class="gallery__wrapper">
+          <div class="gallery__wrapper-heading">
+            <div class="tag">
+
+              <div class="tag__wrapper tag__wrapper1">
+                <span class="tag__content">Work</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery__wrapper-content">
+            <div class="gallery__wrapper-track" data-mouse-down-at="0" data-prev-percentage="0" data-percentage="">
+              <img src="src/img/gallery/1.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+              <img src="src/img/gallery/2.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+              <img src="src/img/gallery/3.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+              <img src="src/img/gallery/4.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+              <img src="src/img/gallery/5.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+              <img src="src/img/gallery/6.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+              <img src="src/img/gallery/7.jpg" loading="lazy" alt="" class="gallery__image slider__comp"
+                draggable="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Source Code -->
+    <section class="sourceCode" id="code">
+      <div class="sourceCode__canvasWrapper">
+        <canvas id="matrix">
+        </canvas>
+      </div>
+
+      <div class="sourceCode__wrapper">
+
+        <div class="tag">
+
+          <div class="tag__wrapper tag__wrapper1">
+            <span class="tag__content">Source code</span>
+          </div>
+        </div>
+
+        <div class="sourceCode__box">
+          <h3 class="heading-tertiary">Behind the simulation</h3>
+          <p class="sourceCode__description">You take the comfy road - you kick back, binge-watch your shows, and stick
+            to the tried-and-true. You take the wild ride
+            - you jump into the unknown, and I take you on an adventure through world full of awesomeness</p>
+          <a class="btn btn__square btn__simple btn__scale" href="#">Let's jump in!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section form -->
+    <section class="section-form" id="form">
+      <div class="section-form__wrapper">
+        <div class="overlay-form"></div>
+        <div id="singleCard">
+          <div class="card">
+            <div class="card__border"></div>
+            <div class="card__content">
+
+              <form action="#" class="form">
+
+                <div class="form__wrapper">
+                  <div class="form__container">
+                    <h3 class="heading-tertiary">Got a question?</h3>
+                    <p class="form__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae illum,
+                      harum nam fuga libero consectetur nobis fugit nisi expedita temporibus amet qui laborum impedit.
+                    </p>
+                  </div>
+
+                  <div class="form__container">
+                    <div class="form__group">
+                      <label for="name" class="form__label">Full name</label>
+                      <input type="text" class="form__input" placeholder="Full name" id='name' required>
+
+                    </div>
+                    <div class="form__group">
+                      <label for="email" class="form__label">Email</label>
+                      <input type="email" class="form__input" placeholder="Email address" id='email' required>
+
+                    </div>
+                    <div class="form__group">
+                      <label for="email" class="form__label">Message</label>
+                      <input type="text" class="form__input" placeholder="Message" id='message'>
+
+                    </div>
+
+                    <div class="form__group">
+                      <a href="mailto:shaillysahayy@gmail.com"><i class="fa-solid fa-envelope"></i>
+                        shaillysahayy@gmail.com</a>
+                      <button class="form__button">Next step</button>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__container">
+
+
+        <div class="footer__block">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a class="link nav__link footer__link" href="#about">About me</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link footer__link" href="#gallery">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link footer__link" href="#code">The code</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link footer__link" href="#form">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <div class="footer__block--copyright">
+            <p>&copy; Shailly Sahay</p>
+          </div>
+          <div class="footer__block--logo">
+            <a href=""><i class="fa-solid fa-gamepad logo" style="color: #ffffff;"></i></a>
+          </div>
+          <div class="footer__block--icons">
+            <a href="https://www.linkedin.com/in/shailly-sahay/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/shailly_sahayy/" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:shaillysahayy@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Block -->
+  <div class="overlay hidden"></div>
+  <div class="projectInfo hidden " id="singleCard">
+  </div>
+
+</body>
+
+</html>
