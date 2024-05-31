@@ -33,6 +33,8 @@ const init = function () {
   navigation.addHandlerStickyNav();
 };
 
+console.log("jhohjo");
+
 init();
 
 const handleOnMouseMove = (e) => {
