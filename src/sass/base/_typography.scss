@@ -15,17 +15,9 @@
     font-size: 12rem;
   }
 
-  @include respond(tab-land) {
-    font-size: 10rem;
+  @include respond(phone) {
+    font-size: 11rem;
   }
-
-  @include respond(tab-port) {
-    font-size: 8rem;
-  }
-
-  // @include respond(phone) {
-  //   font-size: 6rem;
-  // }
 
   &__span1 {
     display: inline-block;
