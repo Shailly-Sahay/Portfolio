@@ -20,7 +20,6 @@
     display: flex;
     gap: $space-xl;
     flex-direction: column;
-    padding: 18rem $section-sidePad 0 $section-sidePad;
   }
 
   &__heading {
@@ -48,24 +47,42 @@
   position: relative;
   border-bottom: 1px solid rgba($color-white, 0.4);
 
+  @include respond(tab-port) {
+    height: 200vh;
+  }
+
   &__contentbox {
     display: flex;
-    gap: 8rem;
     height: 100%;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 10rem;
+    }
 
     &--infobox {
       @include v-centeritem;
       width: 60%;
 
-      padding-right: $section-sidePad;
+      @include respond(tab-port) {
+        width: 100%;
+        // height: 100vh;
+      }
     }
 
     &--imgbox {
       overflow: hidden;
       width: 40%;
 
+      @include respond(tab-port) {
+        width: 100%;
+        height: 100vh;
+      }
+
       & > img {
-        height: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
       }
     }
 
@@ -109,11 +126,14 @@
     position: relative;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
+
+    // @include respond(laptop) {
+    //   font-size: 1rem;
+    // }
   }
 }
-
 .logo {
   font-size: 3rem;
 }
@@ -131,7 +151,7 @@
   z-index: 544546543543;
   width: 100vw;
   position: fixed;
-  padding: 4rem $section-sidePad;
+  padding: 2rem 0;
 }
 
 .nav {
@@ -150,6 +170,23 @@
     display: flex;
     list-style: none;
     align-items: center;
+
+    @include respond(tab-land) {
+      background-color: transparent;
+      position: absolute;
+      // width: 100vw;
+      // height: 100vh;
+      top: 100%;
+      left: 0;
+
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      // justify-content: center;
+
+      gap: 4rem;
+    }
   }
 
   &__item {

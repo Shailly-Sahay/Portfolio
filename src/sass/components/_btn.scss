@@ -20,6 +20,10 @@
       border-radius: 50;
       padding: $space-s $space-l;
       border: 2px solid $color-white;
+
+      @include respond(laptop) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -32,6 +36,14 @@
       // border-radius: 5px;
       padding: $space-s $space-xl;
       border: 2px solid $color-white;
+
+      @include respond(laptop) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -102,5 +114,31 @@
       flex-grow: 0.02;
       transform: scale(1.05);
     }
+  }
+}
+
+// Mobile nav
+.btn-nav-mobile {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &-box {
+    display: none;
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+}
+
+.icon-nav {
+  color: $color-white;
+  height: 4rem;
+  aspect-ratio: 1/1;
+
+  &[name="icon-close"] {
+    display: none;
   }
 }

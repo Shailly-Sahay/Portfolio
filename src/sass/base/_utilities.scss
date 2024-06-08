@@ -20,5 +20,35 @@
   height: 100%;
 }
 
-.form {
+.common-padding {
+  &-H {
+    padding: 0 32rem;
+
+    @include respond(laptop) {
+      padding: 0 22rem;
+    }
+
+    @include respond(tab-land) {
+      padding: 0 12rem;
+    }
+
+    @include respond(tab-port) {
+      padding: 0 10rem;
+    }
+
+    @include respond(phone) {
+      padding: 0 6rem;
+    }
+  }
+
+  &-V {
+    padding: 5rem 0;
+    &-Hero {
+      padding: 20rem 0;
+
+      // @include respond(laptop) {
+      //   padding: 15rem 0;
+      // }
+    }
+  }
 }
