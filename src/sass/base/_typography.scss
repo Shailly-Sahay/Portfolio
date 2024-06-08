@@ -15,9 +15,9 @@
     font-size: 12rem;
   }
 
-  @include respond(phone) {
-    font-size: 11rem;
-  }
+  // @include respond(phone) {
+  //   font-size: 11rem;
+  // }
 
   &__span1 {
     display: inline-block;

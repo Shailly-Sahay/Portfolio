@@ -35,7 +35,7 @@
   &__btnbox {
     .btn__specialWrapper {
       display: flex;
-      @include respond(phone) {
+      @include respond(tab-port) {
         flex-direction: column;
       }
     }
