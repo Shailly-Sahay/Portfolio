@@ -31,9 +31,9 @@ html {
     font-size: 43.75%; //1rem = 7px, 7/16 = 43.75%
   }
 
-  // @include respond(phone) {
-  //   font-size: 37.5%; //1rem = 6px, 6/16 = 37.5%
-  // }
+  @include respond(phone) {
+    font-size: 37.5%; //1rem = 6px, 6/16 = 37.5%
+  }
 }
 
 body {
