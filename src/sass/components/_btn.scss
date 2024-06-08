@@ -23,7 +23,7 @@
       border: 2px solid $color-white;
 
       @include respond(laptop) {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -130,6 +130,7 @@
   color: $color-white;
   height: 4rem;
   aspect-ratio: 1/1;
+  display: inline;
 
   &[name="icon-close"] {
     display: none;

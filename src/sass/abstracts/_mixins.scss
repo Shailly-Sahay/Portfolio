@@ -51,10 +51,8 @@
 
 @mixin starBg($grad) {
   background: $grad, url(../img/Projects-bg.jpg);
-  background-position: center;
-
-  background-size: 300%;
-  // opacity: 0.7;
+  background-position: top;
+  background-repeat: no-repeat;
 
   animation: pan-image2 20s infinite alternate-reverse;
 }

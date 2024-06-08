@@ -39,7 +39,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  min-height: calc(100vh - 2 * 4vw);
+  // min-height: calc(100vh - 2 * 4vw);
 
   background-color: $color-black;
   position: relative;
@@ -67,7 +67,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-
   height: 100vh;
   width: 100vw;
 
@@ -76,26 +75,27 @@ body {
     height: 100%;
     position: fixed;
     background-repeat: no-repeat;
-    background-size: 5%;
-    background-position: center;
 
+    background-position: center;
     &-1 {
       background-image: url(../img/illustration/astronaut-1.png);
 
       animation: astroMov 50s infinite linear alternate-reverse;
       background-size: 5%;
+
+      @include respond(tab-port) {
+        background-size: 15%;
+      }
     }
 
     &-2 {
       background-image: url(../img/illustration/spaceship-1.png);
       animation: spaceshipMov 100s infinite linear alternate-reverse;
       background-size: 2%;
-    }
 
-    &-3 {
-      background-image: url(../img/illustration/asteroid-1.png);
-      animation: asteroidMov 10s infinite linear;
-      background-size: 1%;
+      @include respond(tab-port) {
+        background-size: 10%;
+      }
     }
   }
 
