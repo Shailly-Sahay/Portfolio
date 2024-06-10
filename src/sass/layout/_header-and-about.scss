@@ -52,14 +52,9 @@
 
 // Section-about
 .section-about {
-  height: 100vh;
   margin-bottom: 20rem;
   position: relative;
   border-bottom: 1px solid rgba($color-white, 0.4);
-
-  @include respond(tab-port) {
-    height: 200vh;
-  }
 
   &__contentbox {
     display: flex;
@@ -67,7 +62,7 @@
 
     @include respond(tab-port) {
       flex-direction: column;
-      gap: 10rem;
+      gap: 4rem;
     }
 
     &--infobox {
@@ -86,7 +81,6 @@
 
       @include respond(tab-port) {
         width: 100%;
-        height: 100vh;
       }
 
       & > img {
@@ -98,9 +92,22 @@
 
     &--info {
       color: $color-grey-light-3;
-      font-size: 1.6rem;
+      font-size: $font-body-desktop;
+
+      @include respond(laptop) {
+        font-size: $font-body-laptop;
+      }
+      @include respond(tab-land) {
+        font-size: $font-body-tab-land;
+      }
+      // @include respond(phone) {
+      //   font-size: $font-body-phone;
+      // }
+      @include respond(phone) {
+        font-size: $font-body-phone;
+      }
       line-height: 1.8;
-      margin-bottom: $space-m-s;
+
       & span {
         color: $color-white;
       }
@@ -119,10 +126,7 @@
 }
 
 .info-wrapper {
-  // @include custom-wrapper-mixin($width-70);
-  // @include centeritem;
-
-  gap: $space-xl;
+  gap: 4rem;
   display: flex;
   flex-direction: column;
 }

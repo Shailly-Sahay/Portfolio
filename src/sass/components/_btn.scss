@@ -22,9 +22,9 @@
       padding: $space-s $space-l;
       border: 2px solid $color-white;
 
-      @include respond(laptop) {
-        font-size: 1.2rem;
-      }
+      // @include respond(laptop) {
+      //   font-size: 1.2rem;
+      // }
     }
   }
 
@@ -116,6 +116,7 @@
   background: none;
   cursor: pointer;
   display: flex;
+  justify-content: center;
   align-items: center;
 
   &-box {
@@ -128,9 +129,9 @@
 
 .icon-nav {
   color: $color-white;
-  height: 4rem;
+  height: auto;
   aspect-ratio: 1/1;
-  display: inline;
+  display: block;
 
   &[name="icon-close"] {
     display: none;
