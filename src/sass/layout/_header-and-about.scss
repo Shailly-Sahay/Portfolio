@@ -176,6 +176,7 @@
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
   transition: all 0.3s;
+
   &__logo {
     text-align: center;
   }
@@ -205,9 +206,23 @@
 
   &__item {
     justify-self: end;
-    margin-right: 4rem;
+    // margin-right: 4rem;
+
     &:last-child {
-      margin-right: 0;
+      margin-right: 0rem;
+    }
+
+    &-1 {
+      @include respond(tab-land) {
+        display: none;
+      }
+    }
+
+    &-2 {
+      display: none;
+      @include respond(tab-land) {
+        display: block;
+      }
     }
   }
 

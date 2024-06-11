@@ -23,7 +23,7 @@ class Project extends View {
           <div class="projectInfo__wrapper">
                 <div class="projectInfo__container">
                  <div class="projectInfo__container--1">
-                 <img class="projectInfo__Img" src= "src/img/project/Forkify/application-Forkify.png"/>
+                 <img class="projectInfo__Img" src= "src/img/images/application-${el.name}.png"/>
                </div>
 
                  <div class="projectInfo__container--2">
