@@ -19,43 +19,38 @@ export default class View {
   // SLIDER
   _onMouseHandler = () => {
     const section = document.querySelector(".gallery");
-    section.onmouseup = () => {
-      this._parentElement.dataset.mouseDownAt = "0";
+    const _parentElement = document.querySelector(".gallery__wrapper-track");
+    function handleOnDown(e) {
+      _parentElement.dataset.mouseDownAt = e.clientX;
+    }
 
-      this._parentElement.dataset.prevPercentage =
-        this._parentElement.dataset.percentage;
-    };
-    section.onmousedown = (e) => {
-      this._parentElement.dataset.mouseDownAt = e.clientX;
-    };
-
-    section.onmousemove = (e) => {
-      if (this._parentElement.dataset.mouseDownAt === "0") return;
+    function handleOnMove(e) {
+      if (_parentElement.dataset.mouseDownAt === "0") return;
 
       const mouseDelta =
-        parseFloat(this._parentElement.dataset.mouseDownAt) - e.clientX;
+        parseFloat(_parentElement.dataset.mouseDownAt) - e.clientX;
 
       const maxDelta = window.innerWidth / 2;
 
       const percentage = (mouseDelta / maxDelta) * -100;
 
       const nextPercentageUnconstrained =
-        parseFloat(this._parentElement.dataset.prevPercentage) + percentage;
+        parseFloat(_parentElement.dataset.prevPercentage) + percentage;
       const nextPercentage = Math.max(
         Math.min(nextPercentageUnconstrained, 0),
         -100
       );
 
-      this._parentElement.dataset.percentage = nextPercentage;
+      _parentElement.dataset.percentage = nextPercentage;
 
-      this._parentElement.animate(
+      _parentElement.animate(
         {
           transform: `translate(${nextPercentage}%, -50%)`,
         },
         { duration: 1200, fill: "forwards" }
       );
 
-      for (const image of this._parentElement.getElementsByClassName(
+      for (const image of _parentElement.getElementsByClassName(
         "slider__comp"
       )) {
         image.animate(
@@ -65,6 +60,24 @@ export default class View {
           { duration: 1200, fill: "forwards" }
         );
       }
-    };
+    }
+
+    function handleOnUp(e) {
+      _parentElement.dataset.mouseDownAt = "0";
+
+      _parentElement.dataset.prevPercentage = _parentElement.dataset.percentage;
+    }
+
+    // DOWN
+    section.onmousedown = (e) => handleOnDown(e);
+    window.ontouchstart = (e) => handleOnDown(e);
+
+    // MOVE
+    section.onmousemove = (e) => handleOnMove(e);
+    window.ontouchmove = (e) => handleOnMove(e);
+
+    // UP
+    section.onmouseup = (e) => handleOnUp(e);
+    window.ontouchend = (e) => handleOnUp(e);
   };
 }
