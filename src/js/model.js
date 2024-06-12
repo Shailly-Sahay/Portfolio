@@ -8,7 +8,7 @@ export const projectsInfoArr = [
     id: 1,
     brandColor: "#ff922b",
 
-    toolsArr: ["HTML5", "CSS3", "SASS", "Javascript", "ES6"],
+    toolsArr: ["HTML5", "SASS", "Javascript", "ES6"],
     description:
       "Forkify is a recipe generating application which recieves its data from an API. In this application you can search for recipes, create your own recipe and create a shopping list for the ingredients required.   ",
   },
@@ -17,25 +17,34 @@ export const projectsInfoArr = [
     name: "Faraway",
     id: 2,
     brandColor: "#fcc419",
-    toolsArr: ["HTML5", "CSS3", "SASS", "Javascript", "ES6"],
+    toolsArr: ["HTML5", "CSS3", "React"],
+    description:
+      "Far away is djfhsjkfhdjfkdhfkjsfsbfmsbsjfgsfgsfgshfsbfmnsbfnsbfnsbfsmnfmbsfhdgfsgshfbgshgshf",
+  },
+
+  {
+    name: "eatnsplit",
+    id: 3,
+    brandColor: "#fcc419",
+    toolsArr: ["HTML5", "CSS3", "React"],
     description:
       "Far away is djfhsjkfhdjfkdhfkjsfsbfmsbsjfgsfgsfgshfsbfmnsbfnsbfnsbfsmnfmbsfhdgfsgshfbgshgshf",
   },
 
   {
     name: "Bankist",
-    id: 3,
+    id: 4,
     brandColor: "#39b385",
-    toolsArr: ["HTML5", "CSS3", "SASS", "Javascript", "ES6"],
+    toolsArr: ["HTML5", "SASS", "Javascript", "ES6"],
     description:
       "Bankist is a banking website which also has its own in-built application for its users. Try the application and manage your expenses ",
   },
 
   {
     name: "Natours",
-    id: 4,
+    id: 5,
     brandColor: "#55c57a",
-    toolsArr: ["HTML5", "CSS3", "Javascript", "ES6"],
+    toolsArr: ["HTML5", "CSS3", "ES6"],
     description:
       "Omnifood is a food delivery compay which will love you shfjsfkfsjkfsjkffjshjfdshfdshfjshffsbsf",
   },

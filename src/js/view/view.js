@@ -18,11 +18,18 @@ export default class View {
 
   // SLIDER
   _onMouseHandler = () => {
-    window.onmousedown = (e) => {
+    const section = document.querySelector(".gallery");
+    section.onmouseup = () => {
+      this._parentElement.dataset.mouseDownAt = "0";
+
+      this._parentElement.dataset.prevPercentage =
+        this._parentElement.dataset.percentage;
+    };
+    section.onmousedown = (e) => {
       this._parentElement.dataset.mouseDownAt = e.clientX;
     };
 
-    window.onmousemove = (e) => {
+    section.onmousemove = (e) => {
       if (this._parentElement.dataset.mouseDownAt === "0") return;
 
       const mouseDelta =
@@ -58,13 +65,6 @@ export default class View {
           { duration: 1200, fill: "forwards" }
         );
       }
-    };
-
-    window.onmouseup = () => {
-      this._parentElement.dataset.mouseDownAt = "0";
-
-      this._parentElement.dataset.prevPercentage =
-        this._parentElement.dataset.percentage;
     };
   };
 }

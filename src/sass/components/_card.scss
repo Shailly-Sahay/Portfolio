@@ -211,3 +211,11 @@
 
   @include projectCardCustom($brandName, $brandColor, $hue);
 }
+
+.cardD__eatnsplit {
+  $brandName: eatnsplit;
+  $brandColor: #55c57a;
+  $hue: 132;
+
+  @include projectCardCustom($brandName, $brandColor, $hue);
+}

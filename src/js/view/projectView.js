@@ -22,10 +22,6 @@ class Project extends View {
     const markup = `   
           <div class="projectInfo__wrapper">
                 <div class="projectInfo__container">
-                 <div class="projectInfo__container--1">
-                 <img class="projectInfo__Img" src= "src/img/images/application-${el.name}.png"/>
-               </div>
-
                  <div class="projectInfo__container--2">
                  <button class="btn--close-modal">&times;</button>
                     <H3 class="heading-tertiary">${el.name}</H3>
