@@ -44,7 +44,7 @@ init();
 // SWIPER
 const swiper = new Swiper(".swiper", {
   grabCurdor: true,
-  initialSlide: 4,
+  initialSlide: 0,
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 10,

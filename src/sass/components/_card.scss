@@ -51,7 +51,7 @@
         transparent 9px
       );
       background-size: 100% 7px;
-      animation: pan-overlay 10s infinite linear;
+      // animation: pan-overlay 10s infinite linear;
     }
 
     // The image box of the screen
@@ -73,7 +73,7 @@
       opacity: 0.7;
 
       transition: all 0.3s ease-out;
-      animation: pan-image 15s infinite linear;
+      // animation: pan-image 15s infinite linear;
     }
 
     &__contentbox {
