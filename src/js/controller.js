@@ -1,16 +1,20 @@
 "use strict";
 import * as model from "./model.js";
 
-import gallery from "./view/galleryView.js";
-import lazyLoading from "./view/lazyLoadingView.js";
+// import gallery from "./view/galleryView.js";
+import gallery2 from "./view/gallery.js";
+// import lazyLoading from "./view/lazyLoadingView.js";
 import about from "./view/about.js";
 import Project from "./view/projectView.js";
 import cardHover from "./view/cardHover.js";
 import navigation from "./view/navigation.js";
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+
 const controlGallery = function () {
-  gallery._onMouseHandler();
-  gallery.render(model.projectsInfoArr);
-  gallery.addHandlerClick(controlProject);
+  // gallery._onMouseHandler();
+  gallery2.render(model.projectsInfoArr);
+  gallery2.addHandlerClick(controlProject);
 };
 
 const controlAbout = function () {
@@ -27,7 +31,7 @@ const controlProject = async function (id) {
 
 const init = function () {
   controlGallery();
-  lazyLoading._lazyLoading();
+  // lazyLoading._lazyLoading();
   controlAbout();
   cardHover._init();
   navigation.addHandlerStickyNav();
@@ -36,6 +40,35 @@ const init = function () {
 console.log("jhohjo");
 
 init();
+
+// SWIPER
+const swiper = new Swiper(".swiper", {
+  grabCurdor: true,
+  initialSlide: 4,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  speed: 1000,
+  freeMode: false,
+  mouseWheel: {
+    thresholdDelta: 30,
+  },
+
+  modules: [Navigation, Pagination],
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
 
 const handleOnMouseMove = (e) => {
   const { currentTarget: target } = e;
