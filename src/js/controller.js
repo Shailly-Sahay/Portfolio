@@ -1,9 +1,7 @@
 "use strict";
 import * as model from "./model.js";
 
-// import gallery from "./view/galleryView.js";
-import gallery2 from "./view/gallery.js";
-// import lazyLoading from "./view/lazyLoadingView.js";
+import gallery from "./view/gallery.js";
 import about from "./view/about.js";
 import Project from "./view/projectView.js";
 import cardHover from "./view/cardHover.js";
@@ -12,9 +10,8 @@ import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
 const controlGallery = function () {
-  // gallery._onMouseHandler();
-  gallery2.render(model.projectsInfoArr);
-  gallery2.addHandlerClick(controlProject);
+  gallery.render(model.projectsInfoArr);
+  gallery.addHandlerClick(controlProject);
 };
 
 const controlAbout = function () {

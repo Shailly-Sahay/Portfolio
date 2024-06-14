@@ -1,7 +1,7 @@
 import View from "./view.js";
 import icons from "url:../../img/icons.svg";
 
-class gallery2 extends View {
+class gallery extends View {
   _parentElement = document.querySelector(".swiper-wrapper");
   // _galleryTrack = document.querySelector(".gallery__wrapper-track");
   _card = document.querySelector(".cardD-wrapper");
@@ -20,27 +20,28 @@ class gallery2 extends View {
       .join(" ");
   }
 
+  //<div class="swiper-slide">
+  //          <img src="src/img/gallery/1.jpg" alt="">
+  //        <p>DOGE</p>
+  //    </div>
+
   _generateMarkupProject(el) {
     const markup = `   
-    <div class="swiper-slide">
+        <div class="swiper-slide">
           <div class="cardD-wrapper" data-id="${el.id}"> 
-            <div class="cardD__${el.name} cardD">
-              <div class="cardD__border"></div>
-               <div class="cardD__imgbox"></div>
-               <div class="cardD__overlay"></div>
-                 <div class="cardD__contentbox">
-                   <div class="cardD__contentbox--wrapper">
-                     <div class="cardD__contentbox--imgbox"></div>
-                     <h3 class="cardD__contentbox--heading">${el.name}</h3>
-                  </div>                
-                </div>
+            <div class="cardD__${el.name} cardD">            
+              <div class="cardD__contentbox">
+                <div class="cardD__imgBox"></div>   
+                 <h3 class="cardD__contentbox--heading">${el.name}</h3>         
               </div>
             </div> 
            </div>
+<p>Click to know more</p>
+
          </div>
   `;
     return markup;
   }
 }
 
-export default new gallery2();
+export default new gallery();
