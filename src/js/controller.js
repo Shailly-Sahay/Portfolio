@@ -6,8 +6,6 @@ import about from "./view/about.js";
 import Project from "./view/projectView.js";
 import cardHover from "./view/cardHover.js";
 import navigation from "./view/navigation.js";
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
 
 const controlGallery = function () {
   gallery.render(model.projectsInfoArr);
@@ -38,32 +36,25 @@ console.log("jhohjo");
 
 init();
 
-// SWIPER
 const swiper = new Swiper(".swiper", {
-  grabCurdor: true,
+  grabCursor: true,
   initialSlide: 0,
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 10,
   speed: 1000,
   freeMode: false,
-  mouseWheel: {
-    thresholdDelta: 30,
+  mousewheel: {
+    thresholdDelta: 10,
   },
 
-  modules: [Navigation, Pagination],
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
 

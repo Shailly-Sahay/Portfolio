@@ -20,11 +20,6 @@ class gallery extends View {
       .join(" ");
   }
 
-  //<div class="swiper-slide">
-  //          <img src="src/img/gallery/1.jpg" alt="">
-  //        <p>DOGE</p>
-  //    </div>
-
   _generateMarkupProject(el) {
     const markup = `   
         <div class="swiper-slide">
