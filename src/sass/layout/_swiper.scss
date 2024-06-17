@@ -18,6 +18,10 @@
   &-button-next,
   &-button-prev {
     color: white;
+
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   &-wrapper {
@@ -43,9 +47,9 @@
   transition: 1s;
   user-select: none;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     width: 100px;
-    height: 400px;
+    height: 300px;
     // margin-right: ;
   }
 
@@ -54,7 +58,7 @@
     width: 400px;
     transition: 1s;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 200px;
     }
   }
@@ -95,6 +99,11 @@
   background-color: wheat;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+
+  @include respond(tab-port) {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .swiper-pagination-bullet-active {

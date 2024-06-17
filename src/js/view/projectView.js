@@ -19,26 +19,23 @@ class Project extends View {
 
   _generateMarkupProject(el) {
     console.log(el);
-    const markup = `   
+    const markup = `  
+    <div class="common-padding-H"> 
           <div class="projectInfo__wrapper">
                 <div class="projectInfo__container">
                  <div class="projectInfo__container--2">
                  <button class="btn--close-modal">&times;</button>
                     <H3 class="heading-tertiary">${el.name}</H3>
             <p class="projectInfo__description">${el.description}</p>
-            <div class="projectInfo__toolBox" id="singleCard"></div>
+            <div class="projectInfo__toolBox" ></div>
               <div class="projectInfo__btnBox" >
 <a href="#">Repo</a>
 <a href="#">Live site &#8599;</a>
 </div>
           </div>
-        
         </div>
-   
-
-
     </div>
-       
+   </div>    
   `;
 
     return markup;

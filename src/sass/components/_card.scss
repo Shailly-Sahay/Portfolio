@@ -50,6 +50,11 @@
       justify-content: center;
       &--heading {
         font-size: 3.5rem;
+
+        @include respond(tab-port) {
+          font-size: 2.5rem;
+        }
+
         color: $color-white;
         font-weight: 600;
         text-align: center;
