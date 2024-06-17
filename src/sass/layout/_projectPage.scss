@@ -44,9 +44,22 @@
       &:link,
       &:visited {
         color: $color-white;
-        font-size: 1.6rem;
         transition: all 0.3s;
         text-decoration: none;
+
+        font-size: $font-link-desktop;
+        @include respond(laptop) {
+          font-size: $font-link-laptop;
+        }
+        @include respond(tab-land) {
+          font-size: $font-link-tab-land;
+        }
+        @include respond(tab-port) {
+          font-size: $font-link-tab-port;
+        }
+        @include respond(phone) {
+          font-size: $font-link-phone;
+        }
       }
 
       &:hover,
@@ -72,7 +85,21 @@
       }
 
       & > p {
-        font-size: 1.6rem;
+        font-size: $font-body-desktop;
+
+        @include respond(laptop) {
+          font-size: $font-body-laptop;
+        }
+        @include respond(tab-land) {
+          font-size: $font-body-tab-land;
+        }
+        @include respond(tab-port) {
+          font-size: $font-body-tab-port;
+        }
+        @include respond(phone) {
+          font-size: $font-body-phone;
+        }
+
         color: $color-white;
         margin-bottom: $space-m-xxs;
       }

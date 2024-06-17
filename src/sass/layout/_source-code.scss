@@ -58,7 +58,19 @@
 
   &__description {
     color: $color-white;
-    font-size: 1.5rem;
     margin-bottom: $space-m-m;
+    font-size: $font-body-desktop;
+    @include respond(laptop) {
+      font-size: $font-body-laptop;
+    }
+    @include respond(tab-land) {
+      font-size: $font-body-tab-land;
+    }
+    @include respond(tab-port) {
+      font-size: $font-body-tab-port;
+    }
+    @include respond(phone) {
+      font-size: $font-body-phone;
+    }
   }
 }

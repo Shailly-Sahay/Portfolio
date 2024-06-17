@@ -67,8 +67,6 @@
 }
 
 .form {
-  //   z-index: 99999;
-  //   position: relative;
   &__wrapper {
     display: flex;
     gap: 10rem;
@@ -100,7 +98,19 @@
 
   &__description {
     color: $color-white;
-    font-size: 1.5rem;
+    font-size: $font-body-desktop;
+    @include respond(laptop) {
+      font-size: $font-body-laptop;
+    }
+    @include respond(tab-land) {
+      font-size: $font-body-tab-land;
+    }
+    @include respond(tab-port) {
+      font-size: $font-body-tab-port;
+    }
+    @include respond(phone) {
+      font-size: $font-body-phone;
+    }
   }
 
   &__group {
@@ -115,7 +125,19 @@
       align-items: center;
 
       & > a {
-        font-size: 1.2rem;
+        font-size: $font-link-desktop;
+        @include respond(laptop) {
+          font-size: $font-link-laptop;
+        }
+        @include respond(tab-land) {
+          font-size: $font-link-tab-land;
+        }
+        @include respond(tab-port) {
+          font-size: $font-link-tab-port;
+        }
+        @include respond(phone) {
+          font-size: $font-link-phone;
+        }
         text-decoration: none;
         transition: all, 0.3s;
         &:link,
@@ -137,7 +159,19 @@
 
   &__label {
     color: $color-white;
-    font-size: 2rem;
+    font-size: $font-body-desktop;
+    @include respond(laptop) {
+      font-size: $font-body-laptop;
+    }
+    @include respond(tab-land) {
+      font-size: $font-body-tab-land;
+    }
+    @include respond(tab-port) {
+      font-size: $font-body-tab-port;
+    }
+    @include respond(phone) {
+      font-size: $font-body-phone;
+    }
   }
 
   &__input {

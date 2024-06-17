@@ -33,7 +33,19 @@
       & > .footer__block--icons > a {
         margin-right: 1rem;
         color: rgba($color-white, 0.6);
-        font-size: 1.6rem;
+        font-size: 2rem;
+        @include respond(laptop) {
+          font-size: 2.2rem;
+        }
+        @include respond(tab-land) {
+          font-size: 2.4rem;
+        }
+        @include respond(tab-port) {
+          font-size: 2.6rem;
+        }
+        @include respond(phone) {
+          font-size: 2.8rem;
+        }
       }
     }
   }

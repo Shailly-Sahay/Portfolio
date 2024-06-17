@@ -17,14 +17,23 @@
   &__round {
     &:link,
     &:visited {
-      font-size: 1.4rem;
       border-radius: 50;
       padding: $space-s $space-l;
       border: 2px solid $color-white;
 
-      // @include respond(laptop) {
-      //   font-size: 1.2rem;
-      // }
+      font-size: $font-link-desktop;
+      @include respond(laptop) {
+        font-size: $font-link-laptop;
+      }
+      @include respond(tab-land) {
+        font-size: $font-link-tab-land;
+      }
+      @include respond(tab-port) {
+        font-size: $font-link-tab-port;
+      }
+      @include respond(phone) {
+        font-size: $font-link-phone;
+      }
     }
   }
 
@@ -33,10 +42,23 @@
     &:link,
     &:visited {
       animation: moveInBottom 0.5s ease;
-      font-size: 2rem;
-      // border-radius: 5px;
       padding: $space-s $space-xl;
       border: 2px solid $color-white;
+
+      font-size: $font-body-desktop;
+
+      @include respond(laptop) {
+        font-size: $font-body-laptop;
+      }
+      @include respond(tab-land) {
+        font-size: $font-body-tab-land;
+      }
+      @include respond(tab-port) {
+        font-size: $font-body-tab-port;
+      }
+      @include respond(phone) {
+        font-size: $font-body-phone;
+      }
     }
   }
 

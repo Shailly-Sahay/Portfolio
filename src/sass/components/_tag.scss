@@ -6,7 +6,7 @@
     padding: $space-xs $space-l;
     border-radius: 5rem;
     font-size: 1.6rem;
-    // border: 2px solid gba($primary-light-1, 0.6);
+    border: 2px solid rgba($primary-light-1, 1);
     background-color: #6919ff24;
 
     &::before {
@@ -29,7 +29,20 @@
   &__content {
     color: rgba($primary-light-1, 0.8);
     color: $primary-light-1;
-    font-size: 1.6rem;
     font-weight: 600;
+
+    font-size: $font-link-desktop;
+    @include respond(laptop) {
+      font-size: $font-link-laptop;
+    }
+    @include respond(tab-land) {
+      font-size: $font-link-tab-land;
+    }
+    @include respond(tab-port) {
+      font-size: $font-link-tab-port;
+    }
+    @include respond(phone) {
+      font-size: $font-link-phone;
+    }
   }
 }
