@@ -24,15 +24,17 @@ const controlProject = async function (id) {
   }
 };
 
-const init = function () {
-  controlGallery();
-  // lazyLoading._lazyLoading();
-  controlAbout();
-  cardHover._init();
+const controlNavigation = function () {
   navigation.addHandlerStickyNav();
+  navigation.addHandlerMobileNav();
 };
 
-console.log("jhohjo");
+const init = function () {
+  controlGallery();
+  controlAbout();
+  cardHover._init();
+  controlNavigation();
+};
 
 init();
 
