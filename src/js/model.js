@@ -10,7 +10,7 @@ export const projectsInfoArr = [
 
     toolsArr: ["HTML5", "SASS", "Javascript", "ES6"],
     description:
-      "Forkify is a recipe generating application which recieves its data from an API. In this application you can search for recipes, create your own recipe and create a shopping list for the ingredients required.   ",
+      "Forkify is a recipe generating application which recieves its data from an API. In this application you can search for recipes, create your own recipe. You can even bookmark recipes for later!",
   },
 
   {
@@ -19,7 +19,7 @@ export const projectsInfoArr = [
     brandColor: "#fcc419",
     toolsArr: ["HTML5", "CSS3", "React"],
     description:
-      "Far away is djfhsjkfhdjfkdhfkjsfsbfmsbsjfgsfgsfgshfsbfmnsbfnsbfnsbfsmnfmbsfhdgfsgshfbgshgshf",
+      "Far away is a vacation planner application. You can now plan your trips systematically and keep a track of the things you want to carry!",
   },
 
   {
@@ -28,7 +28,7 @@ export const projectsInfoArr = [
     brandColor: "#fcc419",
     toolsArr: ["HTML5", "CSS3", "React"],
     description:
-      "Far away is djfhsjkfhdjfkdhfkjsfsbfmsbsjfgsfgsfgshfsbfmnsbfnsbfnsbfsmnfmbsfhdgfsgshfbgshgshf",
+      "Eat-n-Split is an application where you can split the bill among your friends. You can very easily determine the money your you owe ti your friend or the money they owe you.",
   },
 
   {
@@ -37,25 +37,15 @@ export const projectsInfoArr = [
     brandColor: "#39b385",
     toolsArr: ["HTML5", "SASS", "Javascript", "ES6"],
     description:
-      "Bankist is a banking website which also has its own in-built application for its users. Try the application and manage your expenses ",
-  },
-
-  {
-    name: "Natours",
-    id: 5,
-    brandColor: "#55c57a",
-    toolsArr: ["HTML5", "CSS3", "ES6"],
-    description:
-      "Omnifood is a food delivery compay which will love you shfjsfkfsjkfsjkffjshjfdshfdshfjshffsbsf",
+      "Bankist is a banking website which also has its own in-built application for its users. Try the application and track your transactions!",
   },
 ];
 
 export const skillsArr = [
-  { skill: "HTML5", emoji: "💪" },
-  { skill: "CSS", emoji: "💪" },
-  { skill: "SASS", emoji: "👍" },
-  { skill: "JS", emoji: "👍" },
-  { skill: "React", emoji: "👶" },
-  { skill: "Webflow", emoji: "👍" },
-  { skill: "Web design", emoji: "👍" },
+  { skill: "Webflow" },
+  { skill: "React" },
+  { skill: "JS" },
+  { skill: "CSS" },
+  { skill: "SASS" },
+  { skill: "HTML5" },
 ];

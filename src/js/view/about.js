@@ -13,8 +13,7 @@ class About extends View {
                       <div class="card__border"> </div>
                       <div class="card__content">
                           <p>
-                              ${skill.skill} ${skill.emoji}
-                          </p>
+                              ${skill.skill} 
                       </div>
                       </div>
               

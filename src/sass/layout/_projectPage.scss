@@ -28,7 +28,11 @@
   z-index: 1000;
 
   &__wrapper {
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__toolBox {
@@ -72,7 +76,7 @@
   }
 
   &__container {
-    background-color: rgba($color-black, 0.7);
+    background-color: rgba($color-white, 0.1);
 
     &--2 {
       position: relative;

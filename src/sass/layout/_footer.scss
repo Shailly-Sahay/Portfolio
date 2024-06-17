@@ -1,6 +1,5 @@
 .footer {
   background-color: $color-black;
-  padding: $space-m-xs $space-m-l;
 
   &__link {
     &:link,
@@ -23,10 +22,22 @@
     padding: $space-s 0;
 
     &:last-child {
-      justify-content: space-around;
+      justify-content: space-between;
 
       & > .footer__block--copyright > p {
-        font-size: 1.4rem;
+        font-size: $font-body-desktop;
+        @include respond(laptop) {
+          font-size: $font-body-laptop;
+        }
+        @include respond(tab-land) {
+          font-size: $font-body-tab-land;
+        }
+        @include respond(tab-port) {
+          font-size: $font-body-tab-port;
+        }
+        @include respond(phone) {
+          font-size: $font-body-phone;
+        }
         color: rgba($color-white, 0.6);
       }
 
@@ -47,6 +58,11 @@
           font-size: 2.8rem;
         }
       }
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
     }
   }
 }
