@@ -1,6 +1,6 @@
 // HERO
 .hero-section {
-  background-image: url(../img/Untitled\ design.svg);
+  background-color: $color-primary;
 }
 
 .hero {
@@ -55,7 +55,7 @@
   margin-bottom: $margin-btm-desktop;
   position: relative;
   border-bottom: 1px solid rgba($color-white, 0.4);
-
+  height: 100vh;
   &__contentbox {
     display: flex;
     height: 100%;
@@ -141,7 +141,7 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    font-weight: 400;
+    font-weight: 600;
 
     font-size: $font-link-desktop;
     @include respond(laptop) {

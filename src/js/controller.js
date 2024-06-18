@@ -6,6 +6,7 @@ import about from "./view/about.js";
 import Project from "./view/projectView.js";
 import cardHover from "./view/cardHover.js";
 import navigation from "./view/navigation.js";
+import lazyLoading from "./view/lazyLoading.js";
 
 const controlGallery = function () {
   gallery.render(model.projectsInfoArr);
@@ -34,6 +35,7 @@ const init = function () {
   controlAbout();
   cardHover._init();
   controlNavigation();
+  lazyLoading._addHandlerLoad();
 };
 
 init();

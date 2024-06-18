@@ -24,11 +24,15 @@ class gallery extends View {
     const markup = `   
         <div class="swiper-slide">
           <div class="cardD-wrapper" data-id="${el.id}"> 
-            <div class="cardD__${el.name} cardD">            
-              <div class="cardD__contentbox">
-                <div class="cardD__imgBox"></div>   
-                 <h3 class="cardD__contentbox--heading">${el.name}</h3>         
-              </div>
+            <div class="cardD__${el.name} cardD">   
+              <div class="cardD__imgBox"></div>         
+               <div class="cardD__contentbox">
+                  <div class="cardD__contentbox--wrapper">
+                   <div class="cardD__contentbox--imgbox"></div>   
+                   <h3 class="cardD__contentbox--heading">${el.name}</h3>         
+                  </div>
+                  </div>
+              
             </div> 
            </div>
 <p>Click to know more</p>

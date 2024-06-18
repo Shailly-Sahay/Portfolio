@@ -14,16 +14,7 @@ export const projectsInfoArr = [
   },
 
   {
-    name: "Faraway",
-    id: 2,
-    brandColor: "#fcc419",
-    toolsArr: ["HTML5", "CSS3", "React"],
-    description:
-      "Far away is a vacation planner application. You can now plan your trips systematically and keep a track of the things you want to carry!",
-  },
-
-  {
-    name: "eatnsplit",
+    name: "Eat-n-split",
     id: 3,
     brandColor: "#fcc419",
     toolsArr: ["HTML5", "CSS3", "React"],
