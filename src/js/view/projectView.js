@@ -29,8 +29,8 @@ class Project extends View {
             <p class="projectInfo__description">${el.description}</p>
             <div class="projectInfo__toolBox" ></div>
               <div class="projectInfo__btnBox" >
-<a href="#">Repo</a>
-<a href="#">Live site &#8599;</a>
+<a href="${el.github}" target="_blank">Repo</a>
+<a href="${el.netlify}" target="_blank">Live site &#8599;</a>
 </div>
           </div>
         </div>

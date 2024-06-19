@@ -11,6 +11,8 @@ export const projectsInfoArr = [
     toolsArr: ["HTML5", "SASS", "Javascript", "ES6"],
     description:
       "Forkify is a recipe generating application which recieves its data from an API. In this application you can search for recipes, create your own recipe. You can even bookmark recipes for later!",
+    github: "https://github.com/Shailly-Sahay/Bankist",
+    netlify: "https://bankistincometracker.netlify.app/",
   },
 
   {
@@ -20,6 +22,8 @@ export const projectsInfoArr = [
     toolsArr: ["HTML5", "CSS3", "React"],
     description:
       "Eat-n-Split is an application where you can split the bill among your friends. You can very easily determine the money your you owe ti your friend or the money they owe you.",
+    github: "https://github.com/Shailly-Sahay/Bankist",
+    netlify: "https://bankistincometracker.netlify.app/",
   },
 
   {
@@ -29,6 +33,8 @@ export const projectsInfoArr = [
     toolsArr: ["HTML5", "SASS", "Javascript", "ES6"],
     description:
       "Bankist is a banking website which also has its own in-built application for its users. Try the application and track your transactions!",
+    github: "https://github.com/Shailly-Sahay/Bankist",
+    netlify: "https://bankistincometracker.netlify.app/",
   },
 ];
 
