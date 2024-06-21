@@ -77,16 +77,23 @@
 
     &--imgbox {
       overflow: hidden;
-      width: 40%;
 
       @include respond(tab-port) {
         width: 100%;
       }
 
-      & > img {
+      & > picture > img {
         width: 100%;
-        height: auto;
-        object-fit: contain;
+
+        @include respond(tab-land) {
+          height: 100vh;
+          width: auto;
+        }
+
+        @include respond(tab-port) {
+          height: auto;
+          width: 100%;
+        }
       }
     }
 
