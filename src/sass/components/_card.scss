@@ -120,6 +120,22 @@
   }
 }
 
+.cardD__PlanWise {
+  $brandName: PlanWise;
+  $brandColor: #0096ff;
+  $hue: 327;
+
+  @include projectCardCustom($brandName, $brandColor, $hue);
+}
+
+.cardD__TeeFusion {
+  $brandName: TeeFusion;
+  $brandColor: #efbd48;
+  $hue: 327;
+
+  @include projectCardCustom($brandName, $brandColor, $hue);
+}
+
 .cardD__Forkify {
   $brandName: Forkify;
   $brandColor: #ff922b;
@@ -128,26 +144,10 @@
   @include projectCardCustom($brandName, $brandColor, $hue);
 }
 
-.cardD__Bankist {
-  $brandName: Bankist;
-  $brandColor: #39b385;
-  $hue: 160;
-
-  @include projectCardCustom($brandName, $brandColor, $hue);
-}
-
-.cardD__Eat-n-split {
-  $brandName: Eat-n-split;
+.cardD__Catalyst {
+  $brandName: Catalyst;
   $brandColor: #55c57a;
   $hue: 132;
 
   @include projectCardCustom($brandName, $brandColor, $hue);
 }
-
-// .cardD__Catalyst {
-//   $brandName: Catalyst;
-//   $brandColor: #55c57a;
-//   $hue: 132;
-
-//   @include projectCardCustom($brandName, $brandColor, $hue);
-// }
