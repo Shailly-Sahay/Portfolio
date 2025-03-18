@@ -1,6 +1,6 @@
 export const projectsInfoArr = [
   {
-    name: "Plan Wise",
+    name: "PlanWise",
     id: 1,
     brandColor: "#0096FF",
 
@@ -22,7 +22,7 @@ export const projectsInfoArr = [
   {
     name: "TeeFusion",
     id: 2,
-    brandColor: "#39b385",
+    brandColor: "#EFBD48",
     toolsArr: ["React", "Tailwind CSS", "Three JS", "Framer motion"],
     description:
       "This is more than just a t-shirt customizer – it's a full-fledged 3D product showcase! Built using Three.js & React, this project lets you: View T-Shirts in Stunning 3D ✅ Change T-Shirt Colors in Real-Time ✅ Upload Custom Logos & Designs ✅ Experience Realistic Interactions with Motion & Lighting",
