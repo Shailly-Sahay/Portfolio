@@ -20,7 +20,7 @@ export const projectsInfoArr = [
   },
 
   {
-    name: "Tee Fusion",
+    name: "TeeFusion",
     id: 2,
     brandColor: "#39b385",
     toolsArr: ["React", "Tailwind CSS", "Three JS", "Framer motion"],
