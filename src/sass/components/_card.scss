@@ -123,7 +123,7 @@
 .cardD__PlanWise {
   $brandName: PlanWise;
   $brandColor: #0096ff;
-  $hue: 327;
+  $hue: 198;
 
   @include projectCardCustom($brandName, $brandColor, $hue);
 }
@@ -131,7 +131,7 @@
 .cardD__TeeFusion {
   $brandName: TeeFusion;
   $brandColor: #efbd48;
-  $hue: 327;
+  $hue: 365;
 
   @include projectCardCustom($brandName, $brandColor, $hue);
 }
